@@ -113,6 +113,8 @@ static const void *kVTMagicView = &kVTMagicView;
     if (CGRectIsEmpty(_sliderView.frame)) {
         [self updateMenuBarState];
     }
+    
+    [_menuBar bringSubviewToFront:_sliderView];
 }
 
 - (void)updateFrameForSubviews {
